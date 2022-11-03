@@ -1,0 +1,89 @@
+
+.price {
+    text-align: center;
+    color: rgb(0, 0, 0);
+   
+}
+.price .heading p {
+    color: black;
+ }
+
+
+
+.price .content .box{
+    justify-content: space-between;
+    width: 28.5%;
+    padding: 30px;
+    border-radius: 10px;
+    height: 380px;
+    margin-top: 44px;
+    color: rgb(25, 24, 24);
+}
+.price .content .box:hover {
+    /* background-color:  #30d3747c; */
+}
+
+
+.price button {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.price button:hover {
+    /* background-color:  #30d374e5; */
+    background-color: whitesmoke;
+    color: #30d374e5 ;
+}
+
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button{
+    display: none;
+}
+
+.price h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+.price h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.price span{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -50px;
+}
+
+.price .topbtn button {
+    margin-top: -20px;
+}
+
+.price ul {
+    margin-top: 40px;
+}
+.price ul li {
+    display: flex;
+    margin-bottom: 20px;
+}
+.price label {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .price .content {
+        flex-direction: column;
+    }
+
+    .price .content .box {
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    
+}

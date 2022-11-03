@@ -1,0 +1,106 @@
+
+.hero {
+    background-image: url("../../../../public/images/brownlife.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.hero .container {
+    padding-top: 12%;
+    /* background-color: rgba(0, 0, 0, 0.282); */
+    height: 100%;
+    width: 95vw;
+}
+
+.heading-container {
+    margin-top: -40px;
+    background-color: rgba(0, 0, 0, 0.282);
+    border-radius: 15px;
+    padding: 40px 0;
+    /* width: 90%; */
+}
+
+
+.hero .heading h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+
+    margin: 0 auto;
+}
+.hero p {
+    color: #fff;
+}
+
+form {
+    background: #000000c3;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 4px 20px;
+    color: #f71735;
+} 
+
+form input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius:5px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    color: black;
+}
+
+form  span {
+    font-size: 14px;
+    color: #f71735;
+    
+}
+
+input::placeholder {
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+}
+
+form .box {
+    padding: 15px;
+    border-left: 1px solid rgba(207, 206, 206, 0.2);
+}
+
+form .box:nth-child(1){
+    border-left: none;
+}
+
+form h5 {
+    font-weight: 500;
+    font-size: 12px;
+    width: 80px;
+}
+
+@media screen  and (max-width:768px) {
+    .hero .container {
+        padding-top: 30%;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form .box {
+        border-left: none;
+    }
+    form input {
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width:390px){
+    
+    .hero .container form {
+        margin-top: -20px;
+        /* display: none; */
+    }
+
+}

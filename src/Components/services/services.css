@@ -1,0 +1,24 @@
+
+.services .featured {
+    background-color: rgb(253, 253, 252);
+}
+
+.services .featured .box {
+    background-color: rgb(253, 253, 252);
+    color: #040A10;
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 38%);
+    transition: all 0.4s linear;
+}
+
+.services .featured .box:hover{
+    transform: translatey(-16px);
+    transition: all 0.4s linear;
+}
+
+.services .heading p {
+    color: rgb(7, 6, 6);
+}
+
+.services body{
+    background-color: #040A10;
+}

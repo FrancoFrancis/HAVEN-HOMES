@@ -1,0 +1,67 @@
+
+.awards {
+    background-color: #081018;
+    margin-top: 70px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.awards .heading {
+    display: flex;
+    flex-direction: column-reverse;
+} 
+
+.awards .heading p {
+    color: #27ae60;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.awards .heading h1 {
+    color: #fff;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.awards img {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.awards .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 50px;
+    color: #fff;
+    border-radius: 70% 5%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.awards p {
+    color: gray;
+    font-size: 12px;
+    display: block;
+
+}
+@media screen and (max-width:390px){
+    .grid4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);   
+        grid-gap: 30px;
+      }
+
+}
+
