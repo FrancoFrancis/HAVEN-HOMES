@@ -10,6 +10,8 @@ html{
   scroll-behavior: smooth;
 }
 
+
+
 body{
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1.2px;
@@ -291,3 +293,4 @@ img {
     width: 90vw;
   }
 }
+

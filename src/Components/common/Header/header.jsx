@@ -7,21 +7,6 @@ import { nav } from "../../Data/data";
 
 export default function Header() {
 
-    //animate on scroll
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          console.log(entry);
-          if(entry.isIntersecting) {
-            entry.target.classList.add("show")
-          } else {
-            entry.target.classList.remove("show")
-          }
-        })
-      })
-      
-      const hiddenElements = document.querySelectorAll(".hidden")
-      hiddenElements.forEach((el) => observer.observe(el))
 
     const [navList, setNavList] = React.useState(false)
 
@@ -30,16 +15,17 @@ export default function Header() {
         <header>
             <div className="container flex" >
                 <div className="logo"> 
-                <h3 className="hh"><hh>H</hh>AVEN <hh>H</hh>OMES</h3>
+                <h3 className="hh" href="#home"><hh>H</hh>AVEN <hh>H</hh>OMES</h3>
+                
                 {/* <img  src="../images/logo.png"/> */}
                 </div>
                 <div className="nav">
                     <ul className={navList ? "small" : "flex"}>
-                        
+
                             <Link to="/" href="#home" spy={true} smooth={true} offset={50} duration={500}>
                                 Home
                             </Link>
-                        
+
                         
                             <Link to="about" href="#about" spy={true} smooth={true} offset={50} duration={500}>
                                 About
@@ -88,36 +74,3 @@ export default function Header() {
     )
 }
 
-
-/*
-
-<div className="nav">
-                    <ul className={navList ? "small" : "flex"}>
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/services">Services</Link>
-                        <Link to="/pricing">Pricing</Link>
-                        <Link to="/contact">Contact</Link>
-                    </ul>
-                </div> 
-
-
-                        <Link to="/about">About</Link>
-                        <Link to="/services">Services</Link>
-                        <Link to="/blog">Blog</Link>
-                        <Link to="/pricing">Pricing</Link>
-                        <Link to="/contact">Contact</Link>
-
-                
-                <div className="nav">
-                    <ul className={navList ? "small" : "flex"}>
-                        {nav.map((list, index) =>(
-                            <li key={index}>
-                                <Router>
-                                <Link to={list.path}> {list.text} </Link>
-                                </Router>
-                            </li>
-                        ))}
-                    </ul>
-                </div> 
-*/ 

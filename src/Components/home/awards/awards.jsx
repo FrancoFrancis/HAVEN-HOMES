@@ -2,15 +2,15 @@
 import "./awards.css"
 import Heading from "../../common/heading "
 import { awards } from "../../Data/data"
+
+
 export default function Awards() {
-
-
+    
     return(
-
         <div>
             <section className="awards padding">
                 <div className="container">
-                    <Heading title="Over 1, 324, 322+ happy users are with us and they still love our services" subtitle="OUR AWARDS"/>
+                    <Heading title="We have Over 1, 324, 322+ happy users with us and they all love our services" subtitle="OUR AWARDS"/>
                     
                     <div className="content grid4 mtop">
                         {awards.map((val, index) => {

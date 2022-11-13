@@ -108,6 +108,21 @@
     }
 }
 
+@media screen and (max-width:414px) {
+    .grid3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);   
+        grid-gap: 70px;
+        align-items: center;
+    }
+
+    .shadow {
+        margin-left: 18px;
+        height: 150px;
+        width: 300px;
+    }
+}
+
 @media screen and (max-width:390px) {
     .grid3 {
         display: grid;

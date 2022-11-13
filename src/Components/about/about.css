@@ -6,6 +6,11 @@
 .about .heading p {
     color: black;
 }
+
+.about .heading {
+    margin-top: 20px;
+}
+
 .about p {
     margin-bottom: 10px;
     color: black;

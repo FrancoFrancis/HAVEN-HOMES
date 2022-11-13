@@ -7,10 +7,12 @@ import Location from "./location/location"
 import Team from "./team/team"
 import Price from "./price/price"
 
+
+
 export default function Home() {
 
     return(
-        <div>
+        <div id="home">
             <Hero/>
             <Featured/>
             <Recent/>

@@ -181,7 +181,6 @@ footer ul li{
 .subscribe {
     background-color: #27ae60;
     color: #ffffff;
-
 }
 
 
@@ -198,6 +197,7 @@ footer ul li{
         width: 80vw;
         display: flex;
         flex-direction: column;
+        /* display:none; */
     }
 
     .quick-links{
@@ -205,10 +205,33 @@ footer ul li{
     }
     .social.media {
         margin-top: 50px;
+        display: none;
     }
 }
 
 
+    
+@media screen and (max-width: 414px) {
+    footer input {
+        margin-bottom: 20px;
+    }
+
+    .social-media ul {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        /* height: 40vh; */
+        /* display: none; */
+    }
+
+    footer .container p {
+        width: 100%;
+    }
+
+    footer {
+        height: 90vh;
+    }
+
+}
 
 @media screen and (max-width: 390px){
     .contact-us {
@@ -239,11 +262,16 @@ footer ul li{
 
 
     .footer-grid1 {
-        /* display: none; */
-        font-size: 13px;
-        margin-top: -20px;
-        padding-bottom: 20px;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #010307; */
+        /* color: #010307; */
+    }
+
+    .footer-grid1 .social-media {
+        margin-bottom: 100px ;
+        padding-top: 20px;
+        /* background-color: #010307; */
     }
 
     .social-media h1 {
@@ -251,18 +279,21 @@ footer ul li{
         position:relative;
         margin-bottom: 20px;
         margin-top: -8px;
+        color: #010307;
     }
 
+
     .legal {
-    margin-top: 100px;
+        position: fixed;
+        bottom: 0;
     }
 
     .social-media ul li {
-        /* background: #24252477; */
-        background-color: rgb(13, 13, 13);
         z-index: 55;
-        color: #010307;
+        background-color: #010307;
+        color: #edeff3;
         margin: 20px;
+        padding: 0 15px;
         font-size: 30px;
         height: 60px;
         width: 60px;
@@ -270,6 +301,11 @@ footer ul li{
         justify-content: center;
         align-items: center;
         cursor: pointer;
+    }
+
+    .social-media ul {
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }

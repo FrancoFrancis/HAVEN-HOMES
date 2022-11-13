@@ -56,12 +56,21 @@
     display: block;
 
 }
-@media screen and (max-width:390px){
+
+@media screen and (max-width:414px){
+    .grid4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);   
+        grid-gap: 30px;
+    }
+
+}
+/* @media screen and (max-width:390px){
     .grid4 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);   
         grid-gap: 30px;
       }
 
-}
+} */
 

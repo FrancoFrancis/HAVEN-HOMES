@@ -48,7 +48,6 @@ export default function Footer() {
                         <li> <i className="fa-brands fa-youtube" ></i> </li>
                         <li> <i className="fa-brands fa-whatsapp" ></i> </li>
                         <li> <i className="fa-brands fa-discord" ></i> </li>
-                        
                     </ul>
                 </div>
                 

@@ -2,10 +2,16 @@ import "./contact.css";
 import Back from "../common/back";
 import img from "../images/contact.jpg";
 import send from "../images/send.svg";
+import {motion} from "framer-motion"
+
 
 export default function Contact() {
   return (
-    <div className="contact mb" id="contact">
+    <motion.div className="contact mb" id="contact"
+    initial={{width:0}}
+    animate={{width:"100vw"}}
+    exit={{x:window.innerWidth, transition: { duration: 0.1 }}}
+    >
       <Back name="Contact us" title="Get Help & Friendly Support" cover={img} />
       <div className="container">
         <form action="" className="shadow">
@@ -24,6 +30,6 @@ export default function Contact() {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
